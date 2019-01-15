@@ -1,4 +1,7 @@
 package com.mingchuang.Demo;
+
+import java.util.Scanner;
+
 /*
 * switch 语句结构
 * switch只能针对某个表达式的值做出判断，从而决定程序执行哪一段代码
@@ -23,7 +26,59 @@ package com.mingchuang.Demo;
 * */
 public class SwitchCaseDemo {
     public static void main(String[] args) {
-        function_1();
+        /*
+        * 键盘录入月份，输出相应的季节
+        * 3,4,5是春季
+        * 6,7,8是夏季
+        * 9,10,11是秋季
+        * 12,1,2是冬季
+        * 合理运用case击穿
+        *
+        * */
+        Scanner sc=new Scanner(System.in);
+        System.out.println("请输入月份");
+        int yuefen=sc.nextInt();
+        switch(yuefen){
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("春季");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("夏季");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("秋季");
+                break;
+            case 12:
+            case 1:
+            case 2:
+                System.out.println("冬季");
+                break;
+            default:
+                System.out.println("输入有误");
+                break;
+        }
+    }
+
+    public static void function_2() {
+        //看程序写结果
+        int x=2;
+        int y=3;
+        switch(x) {
+            default:
+                y++;
+            case 3://先执行case，在default
+                y++;
+                break;
+            case 4:
+                y++;
+
+        }
     }
 
     public static void function_1() {
