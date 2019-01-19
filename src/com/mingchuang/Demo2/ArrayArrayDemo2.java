@@ -10,10 +10,10 @@ public class ArrayArrayDemo2 {
         System.out.println(arr);
         System.out.println(arr[0]);*/
 
-        int[][] arr= new int[][]{{1,2},{3,4}};
-        int[][] arr1={{5,6},{7,8}};
+        int[][] arr= new int[][]{{1,2},{3,4,5}};
+        int[][] arr1={{5,6},{8}};
         System.out.println(arr);
-        System.out.println(arr[0][0]);
+        System.out.println(arr[1][2]);
         System.out.println(arr1[0][1]);
 
 

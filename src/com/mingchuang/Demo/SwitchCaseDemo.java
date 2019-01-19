@@ -71,7 +71,7 @@ public class SwitchCaseDemo {
         int y=3;
         switch(x) {
             default:
-                y++;
+                y++;//没有break，刺穿，执行case 3
             case 3://先执行case，在default
                 y++;
                 break;
@@ -116,5 +116,8 @@ public class SwitchCaseDemo {
                 System.out.println("日期有误！");
                 break ;//此处的break可写可不写
         }
+
+
+
     }
 }
